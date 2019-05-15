@@ -1,76 +1,68 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'react-emotion';
-import { Link } from 'gatsby';
-import { Flex } from 'grid-emotion';
 
-const Wrapper = styled.footer`
-  background: ${props => props.theme.colors.greyDark};
-  color: ${props => props.theme.colors.greyLight};
-  a {
-    color: ${props => props.theme.colors.bg};
-    &:hover {
-      color: ${props => props.theme.colors.primaryLight};
-    }
-  }
-`;
-
-const Inner = styled(Flex)`
-  @media (max-width: ${props => props.theme.breakpoint.l}) {
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    div:last-child {
-      margin-top: 1rem;
-    }
-  }
-`;
-
-const StyledLink = styled(Link)`
-  transform: translateX(0);
-  transition: all 200ms ease-out;
-  &:before {
-    content: '←';
-    padding-right: 8px;
-  }
-  &:hover {
-    color: ${props => props.theme.colors.bg};
-    transform: translateX(-6px);
-  }
-`;
-
-const Footer = ({ isCase }) => {
-  const year = new Date().getFullYear();
+export default function Footer() {
   return (
-    <Wrapper>
-      <Inner justifyContent="space-between" p={4}>
-        {isCase ? (
-          <React.Fragment>
-            <StyledLink to="/">Return to home</StyledLink>
-            <div>Contact Us</div>
-          </React.Fragment>
-        ) : (
-          <React.Fragment>
-            <div>
-              Copyright &copy; {year} by{' '}
-              <a href="https://github.com/LekoArts/gatsby-starter-portfolio-bella">Bella GitHub Repository</a>. Pictures
-              by <a href="https://unsplash.com/">Unsplash</a>. Illustrations by{' '}
-              <a href="https://undraw.co/illustrations">Undraw</a>.
-            </div>
-            <div>Snapchat &mdash; Musicaly &mdash; Twitter</div>
-          </React.Fragment>
-        )}
-      </Inner>
-    </Wrapper>
+    <div>
+      <footer className="mt-3 pt-3 d-flex flex-column">
+        <h5 className="text-white font-italic text-center pt-2">Members of the Horizon Energy Group</h5>
+        <ul className="nav justify-content-center p-2 flex-column flex-md-row align-items-center">
+          <li className="nav-item px-2">
+            <a className="text-white" href="http://www.aquaheat.co.nz">
+              Aquaheat New Zealand
+            </a>
+          </li>
+          <li className="nav-item px-2">
+            <a className="text-white" href="http://www.coollogic.co.nz">
+              Cool Logic
+            </a>
+          </li>
+          <li className="nav-item px-2">
+            <a className="text-white" href="http://www.electriserv.co.nz">
+              ElectriServ
+            </a>
+          </li>
+          <li className="nav-item px-2">
+            <a className="text-white" href="http://www.horizonnetworks.nz">
+              Horizon Networks
+            </a>
+          </li>
+          <li className="nav-item px-2">
+            <a className="text-white" href="http://www.electrinet.co.nz/">
+              ElectriNET
+            </a>
+          </li>
+        </ul>
+        <ul className="nav justify-content-center p-2">
+          <li className="social px-2">
+            <h4>
+              <a className="text-white" href="https://www.facebook.com/Horizon-Energy-Group-386326161751408/">
+                <i className="fab fa-facebook-square" />
+              </a>
+            </h4>
+          </li>
+          <li className="social px-2">
+            <h4>
+              <a className="text-white" href="https://www.youtube.com/channel/UC28MRghP08quGyDYX_fljzw">
+                <i className="fab fa-youtube-square" />
+              </a>
+            </h4>
+          </li>
+          <li className="social px-2">
+            <h4>
+              <a className="text-white" href="https://www.linkedin.com/company-beta/18100442/">
+                <i className="fab fa-linkedin" />
+              </a>
+            </h4>
+          </li>
+        </ul>
+      </footer>
+
+      <style jsx>{`
+        footer {
+          background-color: #102d54;
+        }
+      `}</style>
+    </div>
   );
-};
-
-export default Footer;
-
-Footer.propTypes = {
-  isCase: PropTypes.bool,
-};
-
-Footer.defaultProps = {
-  isCase: false,
-};
+}

@@ -13,12 +13,15 @@ module.exports = {
   },
   /* Plugins */
   plugins: [
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/app/reactiveJobs/*`, `/app/login/*`, `/app/logout/*`] },
+    },
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-emotion',
     {
       resolve: 'gatsby-source-prismic',
       options: {
-        repositoryName: 'gatsby-starter-portfolio-bella',
+        repositoryName: 'horizon-prototype',
         accessToken: `${process.env.API_KEY}`,
         linkResolver: ({ node, key, value }) => doc => `/${doc.uid}`,
         htmlSerializer: ({ node, key, value }) => (type, element, content, children) => {

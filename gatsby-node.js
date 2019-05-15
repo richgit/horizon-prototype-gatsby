@@ -16,12 +16,12 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  const caseTemplate = path.resolve('src/templates/case.jsx');
+  const blogPostTemplate = path.resolve('src/templates/blogPost.jsx');
 
   pages.data.allPrismicCaseStudy.edges.forEach(edge => {
     createPage({
       path: `/${edge.node.uid}`,
-      component: caseTemplate,
+      component: blogPostTemplate,
       context: {
         uid: edge.node.uid,
       },

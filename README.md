@@ -82,8 +82,8 @@ On the right side you have your **Build mode** and **JSON editor**. Open the **J
     "uid" : {
       "type" : "UID",
       "config" : {
-        "label" : "SEO",
-        "placeholder" : "SEO"
+        "label" : Header,
+        "placeholder" : Header
       }
     },
     "header_image" : {
