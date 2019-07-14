@@ -32,12 +32,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-lodash',
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'config/typography.js',
-      },
-    },
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',

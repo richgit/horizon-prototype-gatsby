@@ -47,11 +47,6 @@ const IndexPage = ({
         ))}
       </div>
     </div>
-    <style jsx>{`
-      .card {
-        min-height: 380px;
-      }
-    `}</style>
   </Layout>
 );
 

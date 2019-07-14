@@ -19,7 +19,6 @@ export default function Header() {
         <meta name="msapplication-TileColor" content="#b710a1" />
         <meta name="msapplication-config" content="browserconfig.xml" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -27,7 +26,6 @@ export default function Header() {
           crossOrigin="anonymous"
         />
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" />
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" />
       </Helmet>
 
       <nav className="navbar navbar-expand-md navbar-light bg-light static-top border-bottom shadow">

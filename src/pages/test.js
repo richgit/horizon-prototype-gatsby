@@ -2,7 +2,7 @@ import 'react-table/react-table.css';
 import * as React from 'react';
 import ReactTable from 'react-table';
 import Layout from '../components/Layout';
-import PrivateRoute from '../components/privateRoute';
+// import PrivateRoute from '../components/privateRoute';
 // import WithAuth from '../../components/WithAuth';
 
 class Test extends React.Component {
@@ -57,6 +57,6 @@ class Test extends React.Component {
   }
 }
 
-const WrappedComponent = PrivateRoute(Test);
+// const WrappedComponent = PrivateRoute(Test);
 
-export default WrappedComponent;
+export default Test;

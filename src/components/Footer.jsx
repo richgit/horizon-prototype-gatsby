@@ -57,12 +57,6 @@ export default function Footer() {
           </li>
         </ul>
       </footer>
-
-      <style jsx>{`
-        footer {
-          background-color: #102d54;
-        }
-      `}</style>
     </div>
   );
 }
