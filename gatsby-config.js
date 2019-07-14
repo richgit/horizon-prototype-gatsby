@@ -22,7 +22,7 @@ module.exports = {
       resolve: 'gatsby-source-prismic',
       options: {
         repositoryName: 'horizon-prototype',
-        accessToken: `${process.env.API_KEY}`,
+        accessToken: `MC5YTWtDTnpFQUFFRUFJSk93.77-9fHlO77-9KT_vv73vv73vv71M77-977-9M3tT77-9YO-_ve-_vSYL77-977-977-9V2Tvv73vv73vv71f77-9`,
         linkResolver: ({ node, key, value }) => doc => `/${doc.uid}`,
         htmlSerializer: ({ node, key, value }) => (type, element, content, children) => {
           // Your HTML serializer
