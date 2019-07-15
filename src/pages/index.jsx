@@ -38,7 +38,7 @@ const IndexPage = ({
                 <div className="card-body">
                   <h5 className="font-italic">{c.node.data.subtitle.text}</h5>
 
-                  <BlogDate date={c.node.data.last_publication_date} />
+                  {/* <BlogDate date={c.node.data.last_publication_date} /> */}
                   {/* <p className="font-italic font-weight-light">by Richard Ware</p> */}
                 </div>
               </div>
